@@ -1,0 +1,17 @@
+[debug] [2020-06-09T01:55:08.134Z] ----------------------------------------------------------------------
+[debug] [2020-06-09T01:55:08.140Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\heman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-06-09T01:55:08.141Z] CLI Version:   8.4.2
+[debug] [2020-06-09T01:55:08.141Z] Platform:      win32
+[debug] [2020-06-09T01:55:08.141Z] Node Version:  v12.16.2
+[debug] [2020-06-09T01:55:08.144Z] Time:          Tue Jun 09 2020 07:25:08 GMT+0530 (India Standard Time)
+[debug] [2020-06-09T01:55:08.144Z] ----------------------------------------------------------------------
+[debug] [2020-06-09T01:55:08.145Z] 
+[debug] [2020-06-09T01:55:09.287Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-09T01:55:09.290Z] > authorizing via signed-in user
+[debug] [2020-06-09T01:55:09.291Z] [iam] checking project portfolio-f5a7d for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-06-09T01:55:09.301Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-f5a7d:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2020-06-09T01:55:11.182Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 09 Jun 2020 01:55:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1457","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-09T01:55:11.187Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-f5a7d  
+ 
+[debug] [2020-06-09T01:55:11.684Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 09 Jun 2020 01:55:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}

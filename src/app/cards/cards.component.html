@@ -1,0 +1,86 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="form-cont">
+                    <div class="form-wrap">
+                        <article class="card">
+                            <div class="card-body p-5">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="nav-tab-card">
+                                        <form class="form-horizontal" role="form" [formGroup]="cardForm"
+                                            (ngSubmit)="onSubmit()">
+                                            <div class="form-group">
+                                                <label for="userName">Amount</label>
+                                                <input formControlName="amount" type="number" class="form-control"
+                                                    name="amount" placeholder="" required="" ngModel maxlength="5"
+                                                    onKeyPress="if(this.value.length==5) return false;">
+                
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="userName">Full name (on the card)</label>
+                                                <input formControlName="userName" type="text" class="form-control"
+                                                    name="userName" placeholder="" required=""
+                                                    onKeyPress="if(this.value.length==30) return false;" pattern="[A-Za-z0-9]+" ng-pattern-restrict>
+                                               
+                                            </div> <!-- form-group.// -->
+                                            <div class="form-group">
+                                                <label for="cardNumber">Card number</label>
+                                                <div class="input-group">
+                                                    <input formControlName="cardNumber" type="number"
+                                                        class="form-control" name="cardNumber" placeholder=""
+                                                        required="" ngModel maxlength="16"
+                                                        onKeyPress="if(this.value.length==16) return false;">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text text-muted">
+                                                            <i class="fab fa-cc-visa"></i>   <i
+                                                                class="fab fa-cc-amex"></i>  
+                                                            <i class="fab fa-cc-mastercard"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- form-group.// -->
+                                            <div class="row">
+                                                <div class="col-sm-8">
+                                                    <div class="form-group">
+                                                        <label><span class="hidden-xs">Expiration</span> </label>
+                                                        <div class="input-group">
+                                                            <input formControlName="cardDate" type="number"
+                                                                class="form-control" placeholder="MM" name="cardDate"
+                                                                required="" ngModel maxlength="2"
+                                                                onKeyPress="if(this.value.length==2) return false;">
+
+                                                            <input formControlName="cardYear" type="number"
+                                                                class="form-control" placeholder="YY" name="cardYear"
+                                                                required="" ngModel maxlength="2"
+                                                                onKeyPress="if(this.value.length==2) return false;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="form-group">
+                                                        <label data-toggle="tooltip" title=""
+                                                            data-original-title="3 digits code on back side of the card">CVV
+                                                            <i class="fa fa-question-circle"></i></label>
+                                                        <input formControlName="cardCVV" type="number"
+                                                            class="form-control" ngModel maxlength="3"
+                                                            onKeyPress="if(this.value.length==3) return false;">
+                                                        
+                                                    </div> <!-- form-group.// -->
+                                                </div>
+                                            </div> <!-- row.// -->
+                                            <button class="subscribe btn btn-primary btn-block"
+                                                type="submit">Pay</button>
+                                            <!-- <div *ngIf="cardFormVal.invalid" class="alert alert-danger">{{errorMessage}}</div> -->
+                                        </form>
+                                    </div>
+                                </div> <!-- tab-content .// -->
+                            </div> <!-- card-body.// -->
+                        </article> <!-- card.// -->
+                    </div> <!-- row.// -->
+                </div>
+                <!--container end.//-->
+            </div>
+        </div>
+    </div>
+</div>
